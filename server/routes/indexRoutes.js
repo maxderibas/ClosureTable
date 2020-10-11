@@ -9,6 +9,7 @@ module.exports = (app) => {
   app.get('/api/comments', commentsController.list);
   app.get('/api/comments/:id/getByPk', commentsController.getByPk);
   app.get('/api/comments/:id/getTree', commentsController.getTree);
+  app.get('/api/comments/:id/getNestedStructure', commentsController.getNestedStructure);
 
   app.get('/api/comments/:id/getDescendantes', commentsController.getDescendantes);
   app.get('/api/comments/:id/getDescendantesTree', commentsController.getDescendantesTree);
